@@ -1,8 +1,8 @@
-🛒 ## Carrinho de Compras
+##🛒 Carrinho de Compras
 Um projeto simples e funcional desenvolvido em HTML, CSS e JavaScript, que simula um carrinho de compras interativo.
 Permite adicionar produtos, definir quantidades e calcular automaticamente o valor total da compra em Kwanza (KZ).
 
-📸 # Demonstração
+#📸 Demonstração
 Interface principal: o utilizador seleciona o produto, escolhe a quantidade e adiciona ao carrinho.
 O valor total é atualizado automaticamente.
 
