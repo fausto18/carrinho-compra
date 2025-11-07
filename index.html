@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Carrinho de compras</title>
+</head>
+
+<body>
+  <main class="conteudo-principal">
+    <div class="grafismo-azul"></div>
+    <section class="adicionar-produto">
+      <h1 class="titulo">
+        Carrinho de <span class="texto-azul">compras</span>
+      </h1>
+
+      <form class="formulario">
+        <label class="campo-grupo">
+          <span class="texto-medio-azul">Produto</span>
+          <select class="produto-input" name="produto" id="produto" required>
+            <option value="Fone de ouvido - KZ 15.500,00">Fone de ouvido - KZ 15.500,00</option>
+            <option value="Celular - KZ 87.899,00">Celular - KZ 87.899,00</option>
+            <option value="Oculos VR - KZ 5.000,00">Oculos VR - KZ 5.000,00</option>
+          </select>
+        </label>
+
+        <section class="parte-inferior">
+          <label class="campo-grupo">
+            <span class="texto-medio-azul">Qt.</span>
+            <input class="quantidade-input" id="quantidade" type="number" min="1" placeholder="8" required>
+          </label>
+
+          <section class="botoes-wrapper">
+            <button onclick="adicionar()" type="button" class="botao-form botao-adicionar">Adicionar</button>
+            <button onclick="limpar()" type="button" class="botao-form botao-limpar">Limpar</button>
+          </section>
+        </section>
+      </form>
+    </section>
+    <section class="carrinho">
+      <img src="./assets/carrinho-cinza.svg" alt="Imagem de um carrinho de compras cinza">
+
+      <div class="titulo-wrapper">
+        <img src="./assets/icone-carrinho.svg" alt="ícone de carrinho">
+        <h2 class="carrinho__titulo">Produtos no carrinho</h2>
+      </div>
+
+      <div class="carrinho__produtos" id="lista-produtos">
+        <article class="carrinho__produtos__produto">
+          <span class="texto-azul">1x</span> Celular <span class="texto-azul">KZ 87.899,00</span>
+        </article>
+      </div>
+
+      <div class="divisoria"></div>
+
+      <p class="carrinho__total">
+        Total: <span class="texto-azul" id="valor-total">KZ 87.899,00</span>
+      </p>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
